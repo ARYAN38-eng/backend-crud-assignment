@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const { generateToken } = require('../middlewares/auth');
 
-// Dummy user
 const fakeUser = { id: 1, username: 'admin', role: 'admin' };
 
 router.post('/login', (req, res) => {
